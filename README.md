@@ -8,7 +8,8 @@ This list is not anywhere close to final form and highly subject to intense modi
 
 ### General
 
-- [ ] simple save/load system
+- [x] save/load system (simple)
+- [ ] save/load system (advanced)
 - [ ] scene management system
 - [ ] generalized game state system
 - [ ] generalized event controller
@@ -16,7 +17,8 @@ This list is not anywhere close to final form and highly subject to intense modi
 ### Player
 
 - [ ] Player spawner
-- [ ] Player input controller
+- [x] Player input controller (simple)
+- [ ] Player input controller (advanced)
 - [ ] Player state system
 - [ ] checkpoint system
 - [ ] weapon systems
