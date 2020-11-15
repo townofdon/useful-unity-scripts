@@ -13,6 +13,7 @@ This list is not anywhere close to final form and highly subject to intense modi
 - [ ] scene management system
 - [ ] generalized game state system
 - [ ] generalized event controller
+- [x] factory system
 
 ### Player
 
