@@ -14,6 +14,7 @@ This list is not anywhere close to final form and highly subject to intense modi
 - [ ] generalized game state system
 - [ ] generalized event controller
 - [x] factory system
+- [x] object pooling system
 
 ### Player
 
