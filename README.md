@@ -8,6 +8,8 @@ This list is not anywhere close to final form and highly subject to intense modi
 
 ### General
 
+- [ ] humble object pattern
+  - useful for abstracting out & testing monobehaviours
 - [x] save/load system (simple)
 - [ ] save/load system (advanced)
 - [ ] scene management system

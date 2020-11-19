@@ -3,11 +3,13 @@ using UnityEngine;
 
 // attach this script to a panel inside of a canvas to dynamically
 // generate buttons for each defined Ability
-public class ButtonPanel : MonoBehaviour {
+public class ButtonPanel : MonoBehaviour
+{
   [SerializeField]
   private AbilityButton buttonPrefab;
 
-  private void private void OnEnable() {
+  private void OnEnable()
+  {
     foreach (string name in AbilityFactory.GetAbilityNames())
     {
       var button = Instantiate(buttonPrefab);

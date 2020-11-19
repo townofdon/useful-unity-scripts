@@ -18,7 +18,8 @@ namespace ReflectionFactoryStatic
     public abstract void Process();
   }
 
-  public class StartFireAbility : Ability {
+  public class StartFireAbility : Ability
+  {
     // the following lambda func is called an "Expression Body Property".
     // for more info: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/statements-expressions-operators/expression-bodied-members
     public override string Name => "fire";
@@ -33,7 +34,8 @@ namespace ReflectionFactoryStatic
     }
   }
 
-  public class HealSelfAbility : Ability {
+  public class HealSelfAbility : Ability
+  {
     // the following lambda func is called an "Expression Body Property".
     // for more info: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/statements-expressions-operators/expression-bodied-members
     public override string Name => "heal";
@@ -65,7 +67,7 @@ namespace ReflectionFactoryStatic
       // see: https://docs.microsoft.com/en-us/dotnet/api/system.reflection.assembly?view=net-5.0
       // see: https://docs.microsoft.com/en-us/dotnet/api/system.reflection.assembly.gettypes?view=net-5.0#System_Reflection_Assembly_GetTypes
       var AbilityTypes = Assembly.GetAssembly(typeof(Ability)).GetTypes()
-        .Where(myType => myType.IsClass && !myType.IsAbstract && myType.isSubclassOf(typeof(Ability)))
+        .Where(myType => myType.IsClass && !myType.IsAbstract && myType.isSubclassOf(typeof(Ability)));
 
       // initialize dictionary for finding these by name later (could be an enum/id instead of string)
       abilitiesByName = new Dictionary<string, Type>();
